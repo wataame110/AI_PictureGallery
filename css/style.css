@@ -1,5 +1,6 @@
 html, body {
 	background-image: url('../img/Background-Picture_2.jpg');
+	background-color:rgba(0, 0, 0, 0.450);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -53,9 +54,10 @@ h2{
 h3{
 	
 	font-size: 20px;
-	letter-spacing:-1.5px;
+	/* letter-spacing:-1.5px; */
 	margin-top: -15px;
-	margin-left:35px;
+	text-align: center;
+	/* margin-left:35px; */
 }
 
 #fps

@@ -10,14 +10,14 @@
 		// no need to create my own :)
 		var fps_counter = {
 			
-			tick: function () 
+			tick: function ()
 			{
 				// this has to clone the array every tick so that
-				// separate instances won't share state 
+				// separate instances won't share state
 				this.times = this.times.concat(+new Date());
 				var seconds, times = this.times;
         
-				if (times.length > this.span + 1) 
+				if (times.length > this.span + 1)
 				{
 					times.shift(); // ditch the oldest time
 					seconds = (times[times.length - 1] - times[0]) / 1000;
@@ -57,15 +57,15 @@
 				var $item = item.eq(i);
 				var $block = $item.find('.carouselItemInner');
 				
-        //thanks @chrisgannon!        
+        //thanks @chrisgannon!
         TweenMax.set($item, {rotationY:rY * i, z:radius, transformOrigin:"50% 50% " + -radius + "px"});
 				
-				animateIn( $item, $block )						
+				animateIn( $item, $block )
 			}
 			
 			// set mouse x and y props and looper ticker
 			window.addEventListener( "mousemove", onMouseMove, false );
-			ticker = setInterval( looper, 1000/60 );			
+			ticker = setInterval( looper, 1000/5 );
 		}
 		
 		function animateIn( $item, $block )
