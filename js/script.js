@@ -6,8 +6,6 @@
 		var addX = 0;
 		
 		
-		// fps counter created by: https://gist.github.com/sharkbrainguy/1156092,
-		// no need to create my own :)
 		var fps_counter = {
 			
 			tick: function ()
